@@ -3,6 +3,7 @@ import { CreativeCard } from "../creative-elements";
 import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -31,9 +32,13 @@ export default function Projects() {
                 <div
                   className={`relative h-32 bg-gradient-to-br ${project.gradient} rounded-xl mb-6 flex items-center justify-center overflow-hidden`}
                 >
-                  <div className="text-6xl opacity-90 group-hover:scale-110 transition-transform duration-500">
-                    {project.icon}
-                  </div>
+                  <Image
+                    src={project.icon}
+                    alt={project.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-all duration-500"></div>
                 </div>
 
@@ -57,10 +62,15 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <Button className="w-full bg-gradient-to-r from-portfolio-primary to-blue-600 hover:from-blue-600 hover:to-portfolio-primary text-white transition-all duration-500 transform hover:scale-105 group-hover:shadow-xl">
-                    <Github className="mr-2 h-4 w-4 group-hover:animate-spin" />
-                    Ver en GitHub
-                    <ExternalLink className="ml-2 h-4 w-4 group-hover:animate-pulse" />
+                  <Button
+                    className="w-full bg-gradient-to-r from-portfolio-primary to-blue-600 hover:from-blue-600 hover:to-portfolio-primary text-white transition-all duration-500 transform hover:scale-105 group-hover:shadow-xl"
+                    asChild
+                  >
+                    <a href={project.github}>
+                      <Github className="mr-2 h-4 w-4 group-hover:animate-spin" />
+                      Ver en GitHub
+                      <ExternalLink className="ml-2 h-4 w-4 group-hover:animate-pulse" />
+                    </a>
                   </Button>
                 </div>
               </CreativeCard>
