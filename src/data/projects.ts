@@ -7,6 +7,7 @@ export const projects = [
     gradient: "from-purple-500 to-pink-500",
     icon: "/projects/Chatbot.jpg",
     github: "https://github.com/Cristobalsda/chatbot-geminai",
+    demo: null,
   },
   {
     name: "E-commerce Repuestos",
@@ -16,6 +17,7 @@ export const projects = [
     gradient: "from-blue-500 to-cyan-500",
     icon: "/projects/JorCar.png",
     github: "#",
+    demo: null,
   },
   {
     name: "Gestión de Gimnasio",
@@ -25,6 +27,7 @@ export const projects = [
     gradient: "from-green-500 to-emerald-500",
     icon: "/projects/GoldGym.png",
     github: "#",
+    demo: null,
   },
   {
     name: "Sistema de Horas",
@@ -33,7 +36,8 @@ export const projects = [
     tech: ["Next.js", "PostgreSQL", "Dashboard"],
     gradient: "from-orange-500 to-red-500",
     icon: "/projects/PostaSantaRosa.png",
-    github: "https://postasantarosa.cl/",
+    github: null,
+    demo: "https://postasantarosa.cl/",
   },
   {
     name: "App Móvil de Notas",
@@ -43,5 +47,6 @@ export const projects = [
     gradient: "from-indigo-500 to-purple-500",
     icon: "/projects/AppNotes.jpg",
     github: "https://github.com/Cristobalsda/flutter-noteapp-isar-db",
+    demo: null,
   },
 ];

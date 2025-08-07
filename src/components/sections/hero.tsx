@@ -91,10 +91,13 @@ export default function Hero() {
             <Button
               className="bg-gradient-to-r from-portfolio-secondary to-green-500 hover:from-green-500 hover:to-portfolio-secondary text-white px-10 py-4 rounded-2xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl group"
               size="lg"
+              asChild
             >
-              <Eye className="mr-3 h-6 w-6 group-hover:animate-pulse" />
-              Ver Proyectos
-              <Star className="ml-3 h-6 w-6 group-hover:animate-spin" />
+              <a href="#projects">
+                <Eye className="mr-3 h-6 w-6 group-hover:animate-pulse" />
+                Ver Proyectos
+                <Star className="ml-3 h-6 w-6 group-hover:animate-spin" />
+              </a>
             </Button>
           </div>
         </div>

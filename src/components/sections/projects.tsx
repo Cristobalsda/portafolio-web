@@ -62,16 +62,39 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <Button
-                    className="w-full bg-gradient-to-r from-portfolio-primary to-blue-600 hover:from-blue-600 hover:to-portfolio-primary text-white transition-all duration-500 transform hover:scale-105 group-hover:shadow-xl"
-                    asChild
-                  >
-                    <a href={project.github}>
-                      <Github className="mr-2 h-4 w-4 group-hover:animate-spin" />
-                      Ver en GitHub
-                      <ExternalLink className="ml-2 h-4 w-4 group-hover:animate-pulse" />
-                    </a>
-                  </Button>
+                  <div className="flex gap-3 mt-4">
+                    {project.github && (
+                      <Button
+                        className="flex-1 bg-gradient-to-r from-portfolio-primary to-blue-600 hover:from-blue-600 hover:to-portfolio-primary text-white transition-all duration-500 transform hover:scale-105 group-hover:shadow-xl"
+                        asChild
+                      >
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="mr-2 h-4 w-4 group-hover:animate-spin" />
+                          GitHub
+                        </a>
+                      </Button>
+                    )}
+
+                    {project.demo && (
+                      <Button
+                        className="flex-1 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-emerald-600 hover:to-green-500 text-white transition-all duration-500 transform hover:scale-105 group-hover:shadow-xl"
+                        asChild
+                      >
+                        <a
+                          href={project.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="mr-2 h-4 w-4 group-hover:animate-pulse" />
+                          Ir a la web
+                        </a>
+                      </Button>
+                    )}
+                  </div>
                 </div>
               </CreativeCard>
             </div>

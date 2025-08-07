@@ -1,21 +1,8 @@
 "use client";
 
-import {
-  Calendar,
-  Download,
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Rocket,
-  Star,
-} from "lucide-react";
+import { Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { CreativeCard, GeometricShapes } from "../creative-elements";
-import { Button } from "../ui/button";
 import { useState } from "react";
-import { Input } from "../ui/input";
-import { Textarea } from "../ui/textarea";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -77,7 +64,7 @@ export default function Contact() {
                 <h4 className="font-semibold text-portfolio-text mb-2">
                   Ubicación
                 </h4>
-                <p className="text-portfolio-neutral">Chile</p>
+                <p className="text-portfolio-neutral">Temuco - Chile</p>
               </div>
             </div>
 

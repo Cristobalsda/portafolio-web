@@ -71,20 +71,29 @@ export default function Footer() {
               <Button
                 size="icon"
                 className="glassmorphism-dark hover:bg-portfolio-primary hover:scale-110 transition-all duration-300"
+                asChild
               >
-                <Github size={24} />
+                <a href="https://github.com/Cristobalsda">
+                  <Github size={24} />
+                </a>
               </Button>
               <Button
                 size="icon"
                 className="glassmorphism-dark hover:bg-portfolio-primary hover:scale-110 transition-all duration-300"
+                asChild
               >
-                <Linkedin size={24} />
+                <a href="https://linkedin.com/in/cristobal-pereira-843901185">
+                  <Linkedin size={24} />
+                </a>
               </Button>
               <Button
                 size="icon"
                 className="glassmorphism-dark hover:bg-portfolio-secondary hover:scale-110 transition-all duration-300"
+                asChild
               >
-                <Mail size={24} />
+                <a href="mailto:cristobal.pereira07@gmail.com">
+                  <Mail size={24} />
+                </a>
               </Button>
             </div>
           </div>
