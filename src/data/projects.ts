@@ -16,7 +16,7 @@ export const projects = [
     tech: ["Django", "Next.js", "PostgreSQL"],
     gradient: "from-blue-500 to-cyan-500",
     icon: "/projects/JorCar.png",
-    github: "#",
+    github: "https://github.com/Cristobalsda/E-commerce-jorcar",
     demo: null,
   },
   {
