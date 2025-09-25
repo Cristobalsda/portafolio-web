@@ -82,7 +82,7 @@ export default function Hero() {
               size="lg"
               asChild
             >
-              <a href="/cv.pdf" download>
+              <a href="/Cristobal-Pereira-cv.pdf" download>
                 <Download className="mr-3 h-6 w-6 group-hover:animate-bounce" />
                 Descargar CV
                 <Rocket className="ml-3 h-6 w-6 group-hover:animate-bounce" />

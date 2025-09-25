@@ -44,7 +44,7 @@ export default function AboutMe() {
                 <span className="text-portfolio-secondary font-semibold">
                   experiencia del usuario
                 </span>{" "}
-                y la
+                y la{" "}
                 <span className="text-portfolio-primary font-semibold">
                   escalabilidad
                 </span>{" "}
