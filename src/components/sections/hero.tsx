@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, Eye, Rocket, Star } from "lucide-react";
+import { Download, Eye } from "lucide-react";
 import { Button } from "../ui/button";
 import {
   AnimatedBackground,
@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
 
           <div className="relative">
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-tight bg-gradient-to-r from-portfolio-text via-portfolio-primary to-portfolio-secondary bg-clip-text text-transparent mb-4 animate-glow">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold leading-tight bg-gradient-to-r from-portfolio-text via-portfolio-primary to-portfolio-secondary bg-clip-text text-transparent mb-4">
               Cristobal Pereira
             </h1>
             <div className="min-h-20 mb-6 px-2">
@@ -63,7 +63,7 @@ export default function Hero() {
 
           <CreativeCard className="max-w-3xl mx-auto mb-8 backdrop-blur-xl">
             <p className="text-base sm:text-lg md:text-xl text-portfolio-text font-medium leading-relaxed">
-              Desarrollo aplicaciones web y móviles escalables que
+              Creo aplicaciones web y móviles que
               <span className="text-portfolio-primary font-bold">
                 {" "}
                 transforman ideas
@@ -78,25 +78,23 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center relative">
             <Button
-              className="w-full sm:w-auto bg-gradient-to-r from-portfolio-primary to-blue-600 hover:from-blue-600 hover:to-portfolio-primary text-white px-6 sm:px-10 py-4 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl animate-glow group"
+              className="w-full sm:w-auto bg-portfolio-primary hover:bg-blue-600 text-white px-6 sm:px-10 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
               size="lg"
               asChild
             >
               <a href="/Cristobal-Pereira-cv.pdf" download>
-                <Download className="mr-3 h-6 w-6 group-hover:animate-bounce" />
+                <Download className="mr-3 h-6 w-6" />
                 Descargar CV
-                <Rocket className="ml-3 h-6 w-6 group-hover:animate-bounce" />
               </a>
             </Button>
             <Button
-              className="w-full sm:w-auto bg-gradient-to-r from-portfolio-secondary to-green-500 hover:from-green-500 hover:to-portfolio-secondary text-white px-6 sm:px-10 py-4 rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl group"
+              className="w-full sm:w-auto bg-portfolio-secondary hover:bg-green-500 text-white px-6 sm:px-10 py-4 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl group"
               size="lg"
               asChild
             >
               <a href="#projects">
-                <Eye className="mr-3 h-6 w-6 group-hover:animate-pulse" />
+                <Eye className="mr-3 h-6 w-6" />
                 Ver Proyectos
-                <Star className="ml-3 h-6 w-6 group-hover:animate-spin" />
               </a>
             </Button>
           </div>

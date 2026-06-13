@@ -6,6 +6,7 @@ import Experience from "@/components/sections/experience";
 import Projects from "@/components/sections/projects";
 import Contact from "@/components/sections/contact";
 import Hero from "@/components/sections/hero";
+import Achievements from "@/components/sections/achievements";
 
 export default function Portfolio() {
   return (
@@ -18,6 +19,10 @@ export default function Portfolio() {
 
       <section id="about" className="py-14 px-4 sm:py-20 relative">
         <AboutMe />
+      </section>
+
+      <section id="achievements" className="py-14 px-4 sm:py-20 relative">
+        <Achievements />
       </section>
 
       <section id="skills" className="py-14 px-4 sm:py-20 relative">

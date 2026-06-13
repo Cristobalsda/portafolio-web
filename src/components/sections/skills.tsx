@@ -1,6 +1,6 @@
 "use client";
 
-import { skills } from "@/data/skills";
+import { skillCategories } from "@/data/skills";
 import { TechIcon } from "../creative-elements";
 
 export default function Skills() {
@@ -14,19 +14,32 @@ export default function Skills() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-portfolio-primary to-portfolio-secondary mx-auto rounded-full mb-4"></div>
           <p className="text-base sm:text-xl text-portfolio-neutral">
-            Tecnologías que domino para crear soluciones increíbles
+            Stack organizado por áreas de trabajo
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
-          {skills.map((skill, index) => (
-            <TechIcon
-              key={skill.name}
-              icon={skill.icon}
-              name={skill.name}
-              color={skill.color}
-              index={index}
-            />
+        <div className="grid gap-6 lg:grid-cols-2">
+          {skillCategories.map((category) => (
+            <div
+              key={category.name}
+              className="rounded-3xl border border-white/30 bg-white/40 p-4 shadow-lg backdrop-blur-xl sm:p-6"
+            >
+              <h3 className="mb-5 text-xl font-bold text-portfolio-text">
+                {category.name}
+              </h3>
+
+              <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+                {category.skills.map((skill, index) => (
+                  <TechIcon
+                    key={skill.name}
+                    icon={skill.icon}
+                    name={skill.name}
+                    color={skill.color}
+                    index={index}
+                  />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
