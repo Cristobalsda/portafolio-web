@@ -110,7 +110,7 @@ export const CreativeCard = ({
 }) => {
   return (
     <div
-      className={`glassmorphism rounded-2xl p-6 card-3d hover:shadow-2xl transition-all duration-500 ${className}`}
+      className={`glassmorphism rounded-2xl p-4 sm:p-6 card-3d hover:shadow-2xl transition-all duration-500 ${className}`}
     >
       {children}
     </div>
@@ -130,18 +130,18 @@ export const TechIcon = ({
 }) => {
   return (
     <div
-      className="group cursor-pointer transform transition-all duration-500 hover:scale-125 hover:-translate-y-2"
+      className="group transform transition-all duration-500 md:hover:scale-110 md:hover:-translate-y-2"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
-      <div className="glassmorphism rounded-2xl p-6 hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-portfolio-primary/30 relative overflow-hidden">
+      <div className="glassmorphism rounded-2xl p-4 sm:p-6 hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-portfolio-primary/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-portfolio-primary/5 to-portfolio-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
         <div className="relative z-10 flex flex-col items-center">
           <Icon
-            className={`text-5xl mb-3 ${color} group-hover:animate-bounce-slow`}
+            className={`text-4xl sm:text-5xl mb-3 ${color} group-hover:animate-bounce-slow`}
           />
           <div
-            className={`${color} text-sm font-medium px-3 py-1 rounded-full backdrop-blur-sm`}
+            className={`${color} text-xs sm:text-sm font-medium px-2 sm:px-3 py-1 rounded-full backdrop-blur-sm`}
           >
             {name}
           </div>

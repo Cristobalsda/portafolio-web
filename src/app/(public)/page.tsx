@@ -12,29 +12,29 @@ export default function Portfolio() {
     <div className="min-h-screen relative overflow-hidden">
       <FloatingParticles />
 
-      <section className="min-h-screen flex items-center justify-center px-4 relative">
+      <section className="min-h-screen flex items-center justify-center px-4 py-16 sm:py-20 relative">
         <Hero />
       </section>
 
-      <section id="about" className="py-20 px-4 relative">
+      <section id="about" className="py-14 px-4 sm:py-20 relative">
         <AboutMe />
       </section>
 
-      <section id="skills" className="py-20 px-4 relative">
+      <section id="skills" className="py-14 px-4 sm:py-20 relative">
         <Skills />
       </section>
 
-      <section id="experience" className="py-20 px-4 relative">
+      <section id="experience" className="py-14 px-4 sm:py-20 relative">
         <Experience />
       </section>
-      <section id="projects" className="py-20 px-4 relative">
+      <section id="projects" className="py-14 px-4 sm:py-20 relative">
         <Projects />
       </section>
 
-      <section id="contact" className="py-20 px-4 relative">
+      <section id="contact" className="py-14 px-4 sm:py-20 relative">
         <Contact />
       </section>
-      <footer className="relative py-16 px-4 overflow-hidden">
+      <footer className="relative py-12 px-4 sm:py-16 overflow-hidden">
         <Footer />
       </footer>
     </div>

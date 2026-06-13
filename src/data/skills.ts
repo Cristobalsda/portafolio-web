@@ -12,6 +12,13 @@ import {
   SiFlutter,
   SiPython,
   SiAmazon,
+  SiAstro,
+  SiDart,
+  SiFirebase,
+  SiJavascript,
+  SiMongodb,
+  SiSupabase,
+  SiTypescript,
 } from "react-icons/si";
 
 export const skills = [
@@ -20,10 +27,17 @@ export const skills = [
   { name: "Next.js", icon: SiNextdotjs, color: "text-gray-800" },
   { name: "NestJS", icon: SiNestjs, color: "text-red-600" },
   { name: "React", icon: SiReact, color: "text-cyan-500" },
+  { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+  { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" },
   { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
   { name: "TailwindCSS", icon: SiTailwindcss, color: "text-sky-500" },
+  { name: "Astro", icon: SiAstro, color: "text-orange-500" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-700" },
   { name: "MySQL", icon: SiMysql, color: "text-orange-500" },
+  { name: "MongoDB", icon: SiMongodb, color: "text-green-600" },
+  { name: "Supabase", icon: SiSupabase, color: "text-emerald-500" },
+  { name: "Firebase", icon: SiFirebase, color: "text-amber-500" },
   { name: "AWS", icon: SiAmazon, color: "text-yellow-500" },
   { name: "Flutter", icon: SiFlutter, color: "text-blue-400" },
+  { name: "Dart", icon: SiDart, color: "text-sky-600" },
 ];

@@ -9,13 +9,13 @@ export default function Footer() {
       <FloatingParticles />
 
       <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid gap-10 mb-10 md:grid-cols-3 md:gap-12 md:mb-12">
           <div className="text-center md:text-left">
-            <h3 className="text-3xl font-bold bg-gradient-to-r from-white to-portfolio-primary bg-clip-text text-transparent mb-4">
+            <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-white to-portfolio-primary bg-clip-text text-transparent mb-4">
               Cristobal Pereira
             </h3>
-            <p className="text-gray-300 text-lg">
-              Ingeniero Informático especializado en desarrollo Full Stack
+            <p className="text-base sm:text-lg text-gray-300">
+              Ingeniero Informático especializado en desarrollo Full Stack & Mobile
             </p>
             <div className="flex justify-center md:justify-start mt-4">
               <Code
@@ -29,11 +29,11 @@ export default function Footer() {
             <h4 className="text-xl font-bold text-white mb-6">
               Enlaces Rápidos
             </h4>
-            <ul className="space-y-3">
+            <ul className="grid grid-cols-2 gap-3 sm:block sm:space-y-3">
               <li>
                 <a
                   href="#about"
-                  className="text-gray-300 hover:text-portfolio-primary transition-colors duration-300 text-lg"
+                  className="text-base sm:text-lg text-gray-300 hover:text-portfolio-primary transition-colors duration-300"
                 >
                   Sobre mí
                 </a>
@@ -41,7 +41,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#skills"
-                  className="text-gray-300 hover:text-portfolio-primary transition-colors duration-300 text-lg"
+                  className="text-base sm:text-lg text-gray-300 hover:text-portfolio-primary transition-colors duration-300"
                 >
                   Habilidades
                 </a>
@@ -49,7 +49,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#projects"
-                  className="text-gray-300 hover:text-portfolio-primary transition-colors duration-300 text-lg"
+                  className="text-base sm:text-lg text-gray-300 hover:text-portfolio-primary transition-colors duration-300"
                 >
                   Proyectos
                 </a>
@@ -57,7 +57,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  className="text-gray-300 hover:text-portfolio-primary transition-colors duration-300 text-lg"
+                  className="text-base sm:text-lg text-gray-300 hover:text-portfolio-primary transition-colors duration-300"
                 >
                   Contacto
                 </a>
@@ -101,7 +101,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 pt-8">
           <div className="text-center">
-            <p className="text-gray-400 text-lg mb-4">
+            <p className="text-sm sm:text-lg text-gray-400 mb-4">
               &copy; 2025 Cristobal Pereira. Todos los derechos reservados.
             </p>
             <p className="text-portfolio-secondary text-sm">
