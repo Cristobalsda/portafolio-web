@@ -52,7 +52,7 @@ export const projects = [
     github: null,
     demo: null,
     demoLabel: null,
-    status: "Próximamente en Play Store",
+    status: "En pruebas en Play Store",
     type: "App móvil",
   },
   {
